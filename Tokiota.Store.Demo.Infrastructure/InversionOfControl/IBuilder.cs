@@ -5,5 +5,7 @@
         void Register<TInterface, TService>() where TService : TInterface;
 
         void RegisterAsSingleInstance<TInterface, TService>() where TService : TInterface;
+
+        void RegisterAsSingleInstance<TInterface>(TInterface instance);
     }
 }

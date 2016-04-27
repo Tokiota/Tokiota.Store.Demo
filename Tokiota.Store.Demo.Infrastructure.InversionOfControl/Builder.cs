@@ -1,6 +1,7 @@
 ﻿namespace Tokiota.Store.Demo.Infrastructure.InversionOfControl
 {
     using Autofac;
+    using System;
     using System.Collections.Generic;
     using System.Reflection;
     using System.Web.Mvc;
@@ -21,6 +22,11 @@
         public void RegisterAsSingleInstance<TInterface, TService>() where TService : TInterface
         {
             this.builder.RegisterType<TService>().As<TInterface>().SingleInstance();
+        }
+
+        public void RegisterAsSingleInstance<TInterface>(TInterface instance) 
+        {
+            this.builder.Register<TInterface>(_ => instance).SingleInstance();
         }
 
         public void RegisterAssembly(params string[] assemblyNames)
