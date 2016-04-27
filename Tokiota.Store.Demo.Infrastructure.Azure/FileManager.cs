@@ -9,6 +9,8 @@
     {
         private const string AzureStorageConnectionStringKey = "storage:StorageConnectionString";
         private static readonly string ContainerName = ConfigurationManager.AppSettings["storage:StorageBlobContainerName"];
+        private static readonly string CdnSourceUrl = ConfigurationManager.AppSettings["cdn:SourceUrl"];
+        private static readonly string CdnTargetUrl = ConfigurationManager.AppSettings["cdn:TargetUrl"];
         private readonly CloudStorageAccount storageAccount;
 
         public FileManager()
@@ -37,7 +39,7 @@
             var blobName = Path.GetFileName(filename);
             var container = this.GetOrCreateContainer();
             var blockBlob = container.GetBlockBlobReference(blobName);
-            return blockBlob.Uri.ToString();
+            return blockBlob.Uri.ToString().Replace(CdnSourceUrl, CdnTargetUrl);
         }
 
         public Stream OpenFile(string filename)
