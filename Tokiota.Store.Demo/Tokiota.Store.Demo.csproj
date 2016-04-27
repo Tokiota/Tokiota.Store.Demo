@@ -317,13 +317,13 @@
       <Project>{9902e0ef-6c24-4eb4-9b7e-15213fa391ee}</Project>
       <Name>Tokiota.Store.Demo.Domain.Identity</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Tokiota.Store.Demo.Infrastructure.Azure\Tokiota.Store.Demo.Infrastructure.Azure.csproj">
+      <Project>{1ec966f3-b525-4ad7-b7d3-ce7bf964370f}</Project>
+      <Name>Tokiota.Store.Demo.Infrastructure.Azure</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Tokiota.Store.Demo.Infrastructure.InversionOfControl\Tokiota.Store.Demo.Infrastructure.InversionOfControl.csproj">
       <Project>{9e29b225-e6e5-47fd-b60c-dee504a9baae}</Project>
       <Name>Tokiota.Store.Demo.Infrastructure.InversionOfControl</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Tokiota.Store.Demo.Infrastructure.OnPremises\Tokiota.Store.Demo.Infrastructure.OnPremises.csproj">
-      <Project>{da8d6337-2937-4bfb-94ed-95b98aa06262}</Project>
-      <Name>Tokiota.Store.Demo.Infrastructure.OnPremises</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tokiota.Store.Demo.Infrastructure\Tokiota.Store.Demo.Infrastructure.csproj">
       <Project>{f1f77cf7-8854-4c35-a022-f20fb1fc80ca}</Project>

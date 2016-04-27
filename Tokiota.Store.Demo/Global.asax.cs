@@ -10,7 +10,11 @@
     {
         protected void Application_Start()
         {
-            ApplicationConfig.Register(new Bootstrapper(), "Tokiota.Store.Demo", "Tokiota.Store.Demo.Domain.Catalog", "Tokiota.Store.Demo.Domain.Identity", "Tokiota.Store.Demo.Infrastructure.OnPremises");
+            ApplicationConfig.Register(new Bootstrapper(), 
+                "Tokiota.Store.Demo", 
+                "Tokiota.Store.Demo.Domain.Catalog",
+                "Tokiota.Store.Demo.Domain.Identity", 
+                "Tokiota.Store.Demo.Infrastructure.Azure");
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);

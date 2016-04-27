@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tokiota.Store.Demo.Infrastr
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{FF32C2EA-CDB1-4CEF-B942-AD1C137ECDF4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tokiota.Store.Demo.Infrastructure.Azure", "Tokiota.Store.Demo.Infrastructure.Azure\Tokiota.Store.Demo.Infrastructure.Azure.csproj", "{1EC966F3-B525-4AD7-B7D3-CE7BF964370F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,10 @@ Global
 		{DA8D6337-2937-4BFB-94ED-95B98AA06262}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA8D6337-2937-4BFB-94ED-95B98AA06262}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA8D6337-2937-4BFB-94ED-95B98AA06262}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1EC966F3-B525-4AD7-B7D3-CE7BF964370F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1EC966F3-B525-4AD7-B7D3-CE7BF964370F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1EC966F3-B525-4AD7-B7D3-CE7BF964370F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1EC966F3-B525-4AD7-B7D3-CE7BF964370F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -67,5 +73,6 @@ Global
 		{8D9B17B9-CD18-4AE6-BE9B-347E77472EA3} = {FF32C2EA-CDB1-4CEF-B942-AD1C137ECDF4}
 		{9E29B225-E6E5-47FD-B60C-DEE504A9BAAE} = {B7AC6249-5601-476B-99D7-D8AB3159B4E5}
 		{DA8D6337-2937-4BFB-94ED-95B98AA06262} = {B7AC6249-5601-476B-99D7-D8AB3159B4E5}
+		{1EC966F3-B525-4AD7-B7D3-CE7BF964370F} = {B7AC6249-5601-476B-99D7-D8AB3159B4E5}
 	EndGlobalSection
 EndGlobal
